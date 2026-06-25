@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="style.css">
+ <nav>
+        <a href="home.html">Home</a>
+        <a href="submit complaint.html">Submit Complaint</a>
+        <a href="track complaint.html">Track Complaint</a>
+        <a href="announcements.html">Announcements</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+<h1>Submit a Complaint</h1>
+
+<form>
+
+<label for="fullname">Full Name</label><br>
+<input type="text" id="fullname" required><br><br>
+
+<label for="address">Address</label><br>
+<input type="text" id="address" required><br><br>
+
+<label for="contact">Contact Number</label><br>
+<input type="tel" id="contact" required><br><br>
+
+<label for="category">Complaint Category</label><br>
+<select id="category">
+    <option>Road Issues</option>
+    <option>Garbage Collection</option>
+    <option>Public Safety</option>
+    <option>Water Supply</option>
+    <option>Street Lights</option>
+    <option>Others</option>
+</select><br><br>
+
+<label for="details">Complaint Details</label><br>
+<textarea id="details" rows="6"></textarea><br><br>
+
+<button type="button" onclick="submitComplaint()">
+    Submit Complaint
+</button>
+
+</form>
+
+<script src="script.js"></script>
