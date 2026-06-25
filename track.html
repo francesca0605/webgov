@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="style.css">
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="submit complaint.html">Submit Complaint</a>
+    <a href="track complaint.html">Track Complaint</a>
+    <a href="announcements.html">Announcements</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<h1>Track Complaint</h1>
+
+<p>Enter your complaint reference number below to check its status.</p>
+
+<form>
+    <label for="reference">Reference Number</label><br>
+
+    <input type="text" id="reference"
+    placeholder="e.g. QC-2026-001"><br><br>
+
+    <button type="button" onclick="trackComplaint()">
+    Track Complaint
+</button>
+</form>
+
+<div class="status-card">
+    <h3>Complaint Information</h3>
+
+    <p id="complaintID"></p>
+    <p id="complainant"></p>
+    <p id="complaintType"></p>
+    <p id="complaintDescription"></p>
+    <p id="complaintStatus"></p>
+</div>
+
+<script src="script.js"></script>
